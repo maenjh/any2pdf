@@ -10,7 +10,7 @@
 
 ```bash
 # 1) 저장소 진입
-cd /Users/moon/Desktop/any2pdf
+cd /path/to/any2pdf
 
 # 2) 가상환경(선택)
 python -m venv .venv
@@ -31,9 +31,9 @@ python any2pdf/any2pdf.py "입력_폴더" -o "출력_폴더" --recursive
 
 ## 폴더별 가이드
 
-- `/any2pdf/README.md`: 배치 PDF 변환기 사용법 및 환경(LibreOffice) 점검 절차
-- `/md2docx/README.md`: `md -> docx` 변환 사용법
-- `/hwp2docx/README.md`: `hwp/hwpx -> docx` 변환 사용법
+- `any2pdf/README.md`: 배치 PDF 변환기 사용법 및 환경(LibreOffice) 점검 절차
+- `md2docx/README.md`: `md -> docx` 변환 사용법
+- `hwp2docx/README.md`: `hwp/hwpx -> docx` 변환 사용법
 
 ## 환경 요구사항
 

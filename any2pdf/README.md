@@ -7,7 +7,7 @@
 ## 사용법
 
 ```bash
-cd /Users/moon/Desktop/any2pdf
+cd /path/to/any2pdf
 source .venv/bin/activate
 python any2pdf/any2pdf.py /입력/폴더 -o /출력/폴더 --recursive
 ```

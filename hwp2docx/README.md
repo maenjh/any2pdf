@@ -8,18 +8,18 @@
 ## 사용법
 
 ```bash
-cd /Users/moon/Desktop/any2pdf
+cd /path/to/any2pdf
 source .venv/bin/activate
 
 # 단일 파일
-python hwp2docx/hwp_to_docx.py /path/to/file.hwp
-python hwp2docx/hwp_to_docx.py /path/to/file.hwpx
+python hwp2docx/hwp_to_docx.py ./input-directory/file.hwp
+python hwp2docx/hwp_to_docx.py ./input-directory/file.hwpx
 
 # 폴더 입력
-python hwp2docx/hwp_to_docx.py /path/to/folder_containing_hwp_and_hwpx
+python hwp2docx/hwp_to_docx.py ./input-directory
 
 # 출력 디렉토리 지정 + 덮어쓰기
-python hwp2docx/hwp_to_docx.py /path/to/file1.hwp /path/to/file2.hwpx -o /path/to/output_dir --overwrite
+python hwp2docx/hwp_to_docx.py ./input/file1.hwp ./input/file2.hwpx -o ./output --overwrite
 ```
 
 ## 동작 방식

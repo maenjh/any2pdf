@@ -9,7 +9,7 @@ Markdown(`.md`) 파일을 Word(`.docx`) 형식으로 변환합니다.
 ## 사용법
 
 ```bash
-cd /Users/moon/Desktop/any2pdf
+cd /path/to/any2pdf
 source .venv/bin/activate
 python md2docx/md_to_docx.py input.md [output.docx]
 ```
