@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: any2pdf
+Version: 0.0.0
+Summary: 문서 변환 파이프라인 GUI 및 CLI 실행 환경
+Requires-Python: >=3.10
+Requires-Dist: python-docx>=1.1.0
+Requires-Dist: markdown>=3.7
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: pyhwp>=0.1b15
+Requires-Dist: six>=1.16.0

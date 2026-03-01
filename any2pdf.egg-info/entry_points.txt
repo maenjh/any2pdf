@@ -1,0 +1,5 @@
+[console_scripts]
+any2pdf-cli = any2pdf.any2pdf:main
+any2pdf-gui = gui:main
+hwp2docx-cli = hwp2docx.hwp_to_docx:main
+md2docx-cli = md2docx.md_to_docx:main

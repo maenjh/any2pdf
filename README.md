@@ -16,14 +16,35 @@ cd /path/to/any2pdf
 python -m venv .venv
 source .venv/bin/activate
 
-# 3) 의존성 설치
-uv pip install -r any2pdf/requirements.txt
-uv pip install -r md2docx/requirements.txt
-uv pip install -r hwp2docx/requirements.txt
+# 3) uv 환경 준비 및 의존성 동기화
+uv venv
+source .venv/bin/activate
+uv sync
 
 # 4) 폴더 단위 PDF 변환 실행
-python any2pdf/any2pdf.py "입력_폴더" -o "출력_폴더" --recursive
+uv run any2pdf-cli "입력_폴더" -o "출력_폴더" --recursive
 ```
+
+## GUI 실행
+
+```bash
+cd /path/to/any2pdf
+source .venv/bin/activate
+uv run any2pdf-gui
+```
+
+화면이 안 뜨는 환경(서버/SSH)이라면 아래처럼 실행해 보세요.
+
+```bash
+sudo apt-get install xvfb   # 또는 OS에 맞는 패키지 관리자 사용
+xvfb-run -a uv run any2pdf-gui
+```
+
+GUI에서 제공되는 기능
+
+- `any2pdf` 탭: 파일 또는 폴더의 `.hwp`, `.hwpx`, `.doc`, `.docx`, `.md`를 재귀 탐색 가능하게 PDF 변환
+- `hwp2docx` 탭: 파일 또는 폴더의 `.hwp`, `.hwpx`를 DOCX로 변환
+- `md2docx` 탭: 파일 또는 폴더의 `.md`를 DOCX로 변환
 
 출력 파일명은 충돌을 피하기 위해 다음 형식으로 생성됩니다.
 - `<원본이름>_<원본확장자>.pdf`
